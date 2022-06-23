@@ -48,7 +48,7 @@ I was also able to pin my knowledge on forms and put JS into practice
 
 ## Author
 
-- Website - [NFT Card](https://joatancarlos.github.io/nft-challenge/)
+- Website - [NFT Card](https://joatancarlos.github.io/signup-form/)
 - Frontend Mentor - [@Joatancarlos](https://www.frontendmentor.io/profile/yourusername)
 - LinkedIn - [Joatan Feitosa](www.linkedin.com/in/joatan-feitosa)
 - Instagram - [@_joatancarlosf](https://www.instagram.com/_joatancarlosf)

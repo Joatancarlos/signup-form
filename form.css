@@ -63,6 +63,7 @@ input {
 button {
     background-color: hsl(154, 59%, 51%);
     color: white;
+    box-shadow: 0px 4px 1px rgba(39, 39, 39, 0.555);
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
@@ -75,8 +76,8 @@ button:hover {
     background-color: hsla(154, 59%, 51%, 0.815);
 }
 
-.top, fieldset, button {
-    box-shadow: 0px 4px 1px rgba(36, 36, 36, 0.555)
+.top, fieldset {
+    box-shadow: 0px 6px 1px rgba(71, 71, 71, 0.555)
 }
 
 .top, fieldset, input, button {

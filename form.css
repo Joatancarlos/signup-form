@@ -128,3 +128,10 @@ footer > a:hover {
         padding-top: 30px;
     }
 }
+
+
+.iconError {
+    padding-right: 25px;
+    background: url("images/icon-error.svg") no-repeat right;
+    background-size: 20px;
+  }

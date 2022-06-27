@@ -37,7 +37,7 @@
             type="text" 
             placeholder="First Name"
             autofocus> 
-            <div class="error-msg"></div>
+            <div id="msg-f-name" class="error-msg" style="display: none;">First Name cannot be empty</div>
             <br>
 
             <input 
@@ -54,7 +54,7 @@
             type="email" 
             placeholder="Email Address"
             autocomplete="email"> 
-            
+            <div id="msg-email" class="error-msg" style="display: none;">Looks like this is not an email</div>
             <br>
 
             <input 
@@ -66,7 +66,7 @@
             
             <br>
 
-            <button type="submit" onclick="send()">Claim your free trial</button>
+            <button onclick="return send();">Claim your free trial</button>
             <footer>
               By clicking the button, you are agreeing to our <a href="#">Terms and Services</a> 
               <br>

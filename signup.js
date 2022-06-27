@@ -1,11 +1,46 @@
-let input = document.getElementsByTagName('input')
 
-let err = document.querySelector('.error-msg')
+const validateEmail = (email) => {
+    return email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
 
 function send() {
+    var input = document.getElementsByTagName('input');
+
+    // First Name
+    var divErrorFN = document.getElementById('msg-f-name');
     if (input[0].value == '') {
-        err.innerHTML = 'First Name cannot be empty'
+        divErrorFN.style.display = 'block';
         
+        // exibe ícone de erro
+        if (!input[0].classList.contains('iconError'))
+            input[0].classList.add('iconError');
+    } else {
+        divErrorFN.style.display = 'none';
+
+        // remove ícone de erro
+        if (input[0].classList.contains('iconError'))
+            input[0].classList.remove('iconError');
     }
-    
+
+
+    // E-mail
+    var divErrorEm = document.getElementById('msg-email');
+    if (validateEmail(input[2].value)) {
+        divErrorEm.style.display = 'none';
+
+        // remove ícone de erro
+        if (input[2].classList.contains('iconError'))
+            input[2].classList.remove('iconError');
+    } else {
+        //divErrorEm.innerText = 'E-mail de marico!';
+        divErrorEm.style.display = 'block';
+
+        // exibe ícone de erro
+        if (!input[2].classList.contains('iconError'))
+            input[2].classList.add('iconError');
+    }
+    // Recarrega a página -> retorna true
+    return false;
 }

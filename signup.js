@@ -4,7 +4,7 @@ let err = document.querySelector('.error-msg')
 
 function send() {
     if (input[0].value == '') {
-        err.innerHTML = 'ta doido'
+        err.innerHTML = 'First Name cannot br empty'
         
     }
     

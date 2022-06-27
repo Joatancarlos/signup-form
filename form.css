@@ -52,10 +52,19 @@ input {
     border: .8px solid hsl(246, 25%, 77%);
 }
 
+.error-msg {
+    color: hsl(0, 100%, 74%);
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 500;
+}
+
 button {
     background-color: hsl(154, 59%, 51%);
     color: white;
-
+    align-items: center;
+    justify-content: center;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 17px;
@@ -79,12 +88,13 @@ fieldset, button {
 }
 
 input, button {
+    display: flex;
+    gap: 30px;
     box-sizing: border-box;
     width: 100%;
     height: 50px;
-
     padding-left: 20px;
-    margin-top: 30px;
+    
 }
 
 footer {
@@ -114,6 +124,6 @@ footer > a:hover {
 
     fieldset {
         margin-bottom: 50px;
-        padding-top: 0;
+        padding-top: 30px;
     }
 }

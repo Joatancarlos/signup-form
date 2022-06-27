@@ -1,8 +1,11 @@
-let f_name = window.document.querySelector('#f-name')
-let l_name = window.document.querySelector("#l-name")
-let email = window.document.querySelector("#email")
-let password = window.document.querySelector("#password")
+let input = document.getElementsByTagName('input')
+
+let err = document.querySelector('.error-msg')
 
 function send() {
+    if (input[0].value == '') {
+        err.innerHTML = 'ta doido'
+        
+    }
     
 }

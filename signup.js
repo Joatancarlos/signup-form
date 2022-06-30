@@ -19,13 +19,13 @@ function send() {
     if (input[0].value == '') {
         divErrorFN.style.display = 'block';
         
-        // exibe ícone de erro
+        // show icon error
         if (!input[0].classList.contains('iconError'))
             input[0].classList.add('iconError');
     } else {
         divErrorFN.style.display = 'none';
 
-        // remove ícone de erro
+        // remove icon error
         if (input[0].classList.contains('iconError'))
             input[0].classList.remove('iconError');
     }
@@ -35,13 +35,13 @@ function send() {
     if (input[1].value == '') {
         divErrorLN.style.display = 'block';
         
-        // exibe ícone de erro
+        // show icon error
         if (!input[1].classList.contains('iconError'))
             input[1].classList.add('iconError');
     } else {
         divErrorLN.style.display = 'none';
 
-        // remove ícone de erro
+        // remove icon error
         if (input[1].classList.contains('iconError'))
             input[1].classList.remove('iconError');
     }
@@ -51,14 +51,14 @@ function send() {
     if (validateEmail(input[2].value)) {
         divErrorEm.style.display = 'none';
 
-        // remove ícone de erro
+        // remove icon error
         if (input[2].classList.contains('iconError'))
             input[2].classList.remove('iconError');
     } else {
         
         divErrorEm.style.display = 'block';
 
-        // exibe ícone de erro
+        // show icon error
         if (!input[2].classList.contains('iconError'))
             input[2].classList.add('iconError');
     }
@@ -68,17 +68,17 @@ function send() {
     if (input[3].value == '') {
         divErrorPW.style.display = 'block';
         
-        // exibe ícone de erro
+        // show icon error
         if (!input[3].classList.contains('iconError'))
             input[3].classList.add('iconError');
     } else {
         divErrorPW.style.display = 'none';
 
-        // remove ícone de erro
+        // remove icon error
         if (input[3].classList.contains('iconError'))
             input[3].classList.remove('iconError');
     }
 
-    // Recarrega a página -> retorna true
+    // reload page -> return true
     return false;
 }

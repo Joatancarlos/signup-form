@@ -12,77 +12,68 @@
   
 </head>
 <body>
-  <div class="container">
-    <div class="text">
-      <h1>Learn to code by watching others</h1>
-
-      <p>
-        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-        but understanding how developers think is invaluable.
-      </p>
-
-    </div>
-
-    <div class="form">
-
-        <div class="top">
-          <strong>Try it free 7 days</strong> then $20/mo. thereafter
-        </div>
-
-        <form action="">
-          <fieldset>
-            <input 
-            id="f-name" 
-            name="f-name" 
-            type="text" 
-            placeholder="First Name"
-            autofocus> 
-            <div id="msg-f-name" class="error-msg" style="display: none;">First Name cannot be empty</div>
-
-            <br>
-
-            <input 
-            id="l-name" 
-            name="l-name" 
-            type="text" 
-            placeholder="Last Name"> 
-            <div id="msg-l-name" class="error-msg" style="display: none;">Last Name cannot be empty</div>
-
-            <br>
-
-            <input 
-            id="email" 
-            name="email" 
-            type="email" 
-            placeholder="Email Address"
-            autocomplete="email"> 
-            <div id="msg-email" class="error-msg" style="display: none;">Looks like this is not an email</div>
-            <br>
-
-            <input 
-            id="password" 
-            name="password" 
-            type="password" 
-            placeholder="Password"
-            autocomplete="new-password"> 
-            <div id="msg-password" class="error-msg" style="display: none;">Password cannot be empty</div>
-            
-            <br>
-
-            <button onclick="return send();">Claim your free trial</button>
-            <footer>
-              By clicking the button, you are agreeing to our <a href="#">Terms and Services</a> 
+  <main>
+    <div class="container">
+      <div class="text">
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.
+        </p>
+      </div>
+      <div class="form">
+          <div class="top">
+            <strong>Try it free 7 days</strong> then $20/mo. thereafter
+          </div>
+          <form>
+            <fieldset>
+              <input
+              id="f-name"
+              name="f-name"
+              type="text"
+              placeholder="First Name"
+              autofocus>
+              <div id="msg-f-name" class="error-msg" style="display: none;">First Name cannot be empty</div>
               <br>
-              Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-              Coded by <a href="https://github.com/Joatancarlos" target="_blank">Joatan Feitosa</a>.
-            </footer>
-            
-          </fieldset>
-        </form>
-        
-        
+              <input
+              id="l-name"
+              name="l-name"
+              type="text"
+              placeholder="Last Name">
+              <div id="msg-l-name" class="error-msg" style="display: none;">Last Name cannot be empty</div>
+              <br>
+              <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              autocomplete="email">
+              <div id="msg-email" class="error-msg" style="display: none;">Looks like this is not an email</div>
+              <br>
+              <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Password"
+              autocomplete="new-password">
+              <div id="msg-password" class="error-msg" style="display: none;">Password cannot be empty</div>
+    
+              <br>
+              <button onclick="return send();">Claim your free trial</button>
+              <footer>
+                By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+                <br>
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="https://github.com/Joatancarlos" target="_blank">Joatan Feitosa</a>.
+              </footer>
+    
+            </fieldset>
+          </form>
+    
+    
+      </div>
     </div>
-  </div>
+  </main>
 
 <script src="signup.js"></script>
 </body>
